@@ -1,0 +1,5 @@
+app/code/community/Mediotype/EnhancedEcommerce app/code/community/Mediotype/EnhancedEcommerce
+app/design/frontend/base/default/layout/mediotype/enhanced-ecommerce app/design/frontend/base/default/layout/mediotype/enhanced-ecommerce
+app/design/frontend/base/default/template/mediotype/enhanced-ecommerce app/design/frontend/base/default/template/mediotype/enhanced-ecommerce
+app/etc/modules/Mediotype_EnhancedEcommerce.xml app/etc/modules/Mediotype_EnhancedEcommerce.xml
+Mediotype_GoogleEnhancedEcommerce.xml var/connect/Mediotype_GoogleEnhancedEcommerce.xml

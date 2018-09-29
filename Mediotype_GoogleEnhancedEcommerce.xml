@@ -1,0 +1,134 @@
+<_>
+   <form_key>aHmFHnjNMEUY8pAd</form_key>
+   <name>Mediotype_GoogleEnhancedEcommerce</name>
+   <channel>community</channel>
+   <version_ids>
+      <version_ids>2</version_ids>
+   </version_ids>
+   <summary>Mediotype&apos;s Magento integration with Google&apos;s Enhanced Ecommerce Analytics system enables measuring visitors product interactions for ecommerce websites. This includes: product impressions, clicks, product detail views, add to cart tracking, checkout process monitoring, orders, and transactions.</summary>
+   <description>A successful merchant designs and engineers a fantastic user experience, especially when dealing with product browsing and checkout behavior.
+
+The Magento integration with Google&apos;s Enhanced Ecommerce Analytics seamlessly adds functionality for merchants to not only upgrade to Enhanced Ecommerce reporting from their GA account, but also to track demographics and maintain standard Google Analytics functionality for Magento, something that does not come out of the box, and no other extension provides access to (yet).
+
+By purchasing and implementing the Mediotype Magento + Google Enhanced Ecommerce integration extension, merchants enable powerful reports in their Google Analytics dashboard, such as:
+	- Shopping &amp;amp; Purchasing Behavior
+	- Economic Performance
+
+Merchandising Success</description>
+   <license>Custom License</license>
+   <license_uri>http://mediotype.com/LICENSE.txt</license_uri>
+   <version>1.1.1</version>
+   <stability>stable</stability>
+   <notes>- Change to Success Page logic
+- Update to Core module Javascript</notes>
+   <authors>
+      <name>
+         <name>Mediotype</name>
+      </name>
+      <user>
+         <user>mprototype</user>
+      </user>
+      <email>
+         <email>joel@mediotype.com</email>
+      </email>
+   </authors>
+   <depends_php_min>5.0.0</depends_php_min>
+   <depends_php_max>6.0.0</depends_php_max>
+   <depends>
+      <package>
+         <name>
+            <name/>
+         </name>
+         <channel>
+            <channel/>
+         </channel>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+         <files>
+            <files>             </files>
+         </files>
+      </package>
+      <extension>
+         <name>
+            <name>Core</name>
+         </name>
+         <min>
+            <min/>
+         </min>
+         <max>
+            <max/>
+         </max>
+      </extension>
+   </depends>
+   <contents>
+      <target>
+         <target>magelocal</target>
+         <target>magecommunity</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageetc</target>
+         <target>magecommunity</target>
+         <target>mageetc</target>
+         <target>magedesign</target>
+         <target>magedesign</target>
+         <target>mageskin</target>
+         <target>mage</target>
+      </target>
+      <path>
+         <path/>
+         <path>Mediotype/EnhancedEcommerce</path>
+         <path>frontend/base/default/template/mediotype/enhanced-ecommerce</path>
+         <path>frontend/base/default/layout/mediotype/enhanced-ecommerce</path>
+         <path>modules/Mediotype_EnhancedEcommerce.xml</path>
+         <path>Mediotype/Core</path>
+         <path>modules/Mediotype_Core.xml</path>
+         <path>adminhtml/base/default/layout/mediotype-core</path>
+         <path>adminhtml/base/default/template/mediotype/core</path>
+         <path>adminhtml/base/default/mediotype</path>
+         <path>js/mediotype/core</path>
+      </path>
+      <type>
+         <type>file</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>file</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>dir</type>
+         <type>dir</type>
+      </type>
+      <include>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+         <include/>
+      </include>
+      <ignore>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+         <ignore/>
+      </ignore>
+   </contents>
+</_>

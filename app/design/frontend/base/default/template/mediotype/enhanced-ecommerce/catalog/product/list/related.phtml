@@ -1,0 +1,48 @@
+<?php
+/**
+ * Sends product view data to Google Enhanced Ecommerce Analytics
+ *
+ * @author  Dale Owen @mediotype
+ * @reference   https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-ecommerce
+ * @var $this Mediotype_EnhancedEcommerce_Block_Catalog_Product_List_Related
+ */
+$items = $this->getItems();
+$current_category = Mage::registry('current_category');
+?>
+<?php if($this->getItems()->getSize()): ?>
+    <script type="text/javascript">
+        //<![CDATA[
+        <?php $position = 0 ?>
+        <?php foreach($items as $item): ?>
+        <?php
+            $impressionData = array(
+                "id" => $item->getId(),
+                "name" => $item->getName(),
+                "position" => ++$position
+                );
+            if(isset($current_category)){
+                $impressionData['category'] = $current_category->getName();
+
+            }
+            $impressionData['list'] = "Related Products";
+        ?>
+        ga('ec:addImpression', <?php echo json_encode($impressionData) ?>);
+        //add click analysis to the links
+        var rLinks = $$('#block-related > li:nth-child(<?php echo $position ?>) a');
+        rLinks.each(function(link){
+            link.onclick = function() {
+                <?php unset($impressionData['list']) ?>
+                ga('ec:addProduct', <?php echo json_encode($impressionData) ?>);
+                ga('ec:setAction', 'click',{list: 'Related Products'});
+                ga('send', 'event', 'UX', 'click', 'Related Products',{
+                    'hitCallback': function() {
+                        document.location = link.href;
+                    }
+                });
+            };
+        });
+
+        <?php endforeach; ?>
+        //]]>
+    </script>
+<?php endif; ?>
